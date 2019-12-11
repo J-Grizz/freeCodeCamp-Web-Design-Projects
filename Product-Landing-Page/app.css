@@ -1,0 +1,296 @@
+/*  Global Elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 2200px;
+}
+
+@media (max-width: 800px) {
+
+  html,
+  body {
+    height: 3100px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  html,
+  body {
+    height: 3400px;
+  }
+}
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074136_960_720.jpg);
+  background-size: cover;
+  font-family: "Cormorant", sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+  background-color: rgba(255, 165, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+  .main-container {
+    padding-top: 170px;
+  }
+}
+
+/*  Global styles */
+
+li {
+  list-style: none;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  height: 100%;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+a:hover {
+  transform: scale(1.1);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-family: "Cardo", monospace;
+  text-align: center;
+  font-weight: 100;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+p {
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+/*  Header style */
+
+#header {
+  background: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074136_960_720.jpg);
+  background-position-y: 0;
+  background-size: cover;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 50%;
+  margin-left: -49%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+  min-height: 75px;
+  width: 98%;
+  border: 3px inset #b0835d;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  display: flex;
+  font-size: 1.7em;
+  font-family: "Cardo", monospace;
+  min-width: 320px;
+}
+
+.logo img {
+  padding-right: 15px;
+  height: 75px;
+}
+
+nav>ul {
+  max-width: 500px;
+  min-width: 300px;
+  width: 35vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  #header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 40px 30px 40px;
+  }
+}
+
+/*  Hero Style */
+
+.promo-container {
+  margin: 20px 0;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Product Cards */
+
+#products section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.product-container {
+  background: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074136_960_720.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+  border: 4px inset #b0835d;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  #products section {
+    flex-direction: column;
+  }
+
+  .product-container:nth-of-type(2) {
+    margin: 40px 0;
+  }
+}
+
+.product-container:hover {
+  box-shadow: inset 6px 6px 8px rgba(0, 0, 0, 0.8);
+}
+
+.product-container img {
+  border-radius: 10px;
+  border: 3px outset #b0835d;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.product-container h2 {
+  margin: 20px 0;
+}
+
+.product-container p {
+  margin: 20px 0;
+}
+
+/*  More info */
+
+#more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+input[type="email"] {
+  background-color: rgba(0, 0, 0, 0);
+  color: #000;
+  font-size: 1.2em;
+  max-width: 275px;
+  width: 300px;
+  margin: 15px 40%;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+iframe {
+  border: 3px inset #b0835d;
+  border-radius: 10px 10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8);
+  max-width: 60vw;
+  min-width: 50vw;
+  height: 530px;
+}
+
+#footer {
+  background: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074136_960_720.jpg);
+  background-position-y: -700px;
+  background-size: cover;
+  position: fixed;
+  z-index: 2;
+  top: 94vh;
+  left: 50%;
+  margin-left: -49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 50px;
+  min-height: 75px;
+  width: 98%;
+  border: 3px inset #b0835d;
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8);
+}

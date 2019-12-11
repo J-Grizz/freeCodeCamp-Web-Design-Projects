@@ -1,0 +1,120 @@
+body {
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 8px;
+  font-family: "ZCOOL XiaoWei", serif;
+  font-size: 1.3em;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  color: #fada5e;
+  border-radius: 5px;
+  width: 100%;
+}
+
+h1 {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+#title {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#img-div {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#img-caption {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+img {
+  width: 30%;
+  max-width: 100%;
+}
+
+#tribute-info {
+  width: 98%;
+  background-color: #242424;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.top-space {
+  margin-top: 50px;
+}
+
+ul {
+  margin: 30px 10%;
+}
+
+ul li {
+  margin: 20px 0px;
+}
+
+.para {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+br {
+  content: "";
+  margin: 0.8em;
+  display: block;
+  font-size: 4%;
+}
+
+#footer {
+  margin: 50px 0px 70px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #fada5e;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#footer-width {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #003839;
+}
+
+.navbar {
+  transition: all 1s;
+}
+
+.wrapper {
+
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100%;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 4px;
+}
+
+.welcome-section {
+  position: relative;
+  height: 100vh;
+}
+
+.contact-section {
+  position: relative;
+  height: 100vh;
+  padding-top: 200px;
+}
+
+.contact-links {
+  width: 400px;
+  padding-left: 20px;
+}
+
+.long-button {
+  width: 100%
+}
+
+.short-button {
+  width: 46.8%;
+}
+
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-2px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+.bg1::after {
+  background-image: url(sunset.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg2::after {
+  background-image: url(awaken.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects-section {
+  background: linear-gradient(180deg, #003C51, #003839);
+  height: 100vh;
+  color: rgb(200, 200, 200);
+}
+
+.card img {
+  filter: grayscale(.3);
+  height: 350px;
+  transition: all .7s;
+}
+
+.card {
+  background-color: rgba(50, 50, 50, .2);
+}
+
+.card a {
+  overflow: hidden;
+}
+
+.card img:hover {
+  filter: none;
+  transform: scale(1.05);
+}
+
+footer {
+  height: 50px;
+  transform: translateY(190px);
+  background-color: #1C2331;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+.wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
